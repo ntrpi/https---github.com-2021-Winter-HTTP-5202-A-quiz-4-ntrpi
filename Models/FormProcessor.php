@@ -1,7 +1,7 @@
 <?php
 // File created by Sandra Kupfer 2021/03.
 
-namespace Codesses\php\Models
+namespace quiz_4_ntrpi\Models
 {
     class FormProcessor 
     {
@@ -60,6 +60,13 @@ namespace Codesses\php\Models
         {
             return preg_match( "/\d{10}/", $phone );
         }
+
+        // Validating format A1A 1A1
+        public static function isValidPostalCode( $postalCode )
+        {
+            return preg_match( "/^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/", $postalCode );
+        }
+
 
         // Use the paramaters to make the conditions more strict.
         public static function isValidPassword( $password, $length = 8, $mustContainUpper = false, $mustContainNumber = false, $mustContainSpecial = false )

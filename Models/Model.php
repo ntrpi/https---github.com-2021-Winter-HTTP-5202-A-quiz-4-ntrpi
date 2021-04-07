@@ -1,9 +1,9 @@
 <?php
 // File created by Sandra Kupfer 2021/03.
 
-namespace Codesses\php\Models
+namespace quiz_4_ntrpi\Models
 {
-    use Codesses\php\Models\{Database};
+    use quiz_4_ntrpi\Models\{Database};
     require_once "Database.php";
     require_once "utl.php";
 

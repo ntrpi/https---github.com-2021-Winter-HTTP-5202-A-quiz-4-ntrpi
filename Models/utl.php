@@ -6,6 +6,14 @@ function wl( $someString )
     echo $someString . "</br>";
 }
 
+function pp( $obj )
+{
+    $jsonData = json_encode( $obj, JSON_PRETTY_PRINT );
+    echo "<pre> {$jsonData} </pre>";
+}
+
+
+
 // Code copied from https://www.php.net/manual/en/function.session-status.php
 // 2021/03/29
 function isSessionStarted()
